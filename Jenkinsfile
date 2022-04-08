@@ -1,26 +1,20 @@
 pipeline {
     agent any
-    
-    stages {
-        stage('Verify code') {
-            steps {
-                echo 'Validando codigo'
-            }
-        }    
+
     stages {
         stage('Build') {
             steps {
-                echo 'Generando codigo....'
+                echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testeando aplicacion...'
+                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Subiendo a ambientes...'
+                echo 'Deploying....'
             }
         }
     }

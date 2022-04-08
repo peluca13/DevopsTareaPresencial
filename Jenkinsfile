@@ -1,6 +1,13 @@
 pipeline {
     agent any
-
+    
+    stages {
+        stage('Verify code') {
+            steps {
+                echo 'Validando codigo'
+            }
+        }
+    
     stages {
         stage('Build') {
             steps {

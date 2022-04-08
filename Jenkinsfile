@@ -6,8 +6,7 @@ pipeline {
             steps {
                 echo 'Validando codigo'
             }
-        }
-    
+        }    
     stages {
         stage('Build') {
             steps {
